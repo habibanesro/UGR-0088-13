@@ -1,0 +1,185 @@
+body{
+    background-color: #ccceac;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family:'Times New Roman', Times, serif;
+}
+/***********first-box of contact me page************/
+.section1{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #ddd;
+}
+.contact-container1{
+    width: 80%;
+    display: block;
+    margin: auto;
+    padding-top: 5px;
+}
+.contacts-image{
+    float: left;
+    width: 30%;
+    padding-top: 110px; 
+}
+.contacts-image img{
+    border: 2px solid blue;
+    width: 150px;
+    height:130px ;
+    border-radius: 30px;
+    display: block;
+}
+.right-part{
+    float: right;
+    width: 65%;
+}
+.right-part .love-to-hear h1{
+    margin-top: 20px;
+    color: #5d5d5d;
+    /* font-size: 21px; */
+}
+.right-part .love-to-hear p{
+    margin-top: 10px;
+    font-size: 18px;
+    line-height: 1.5;
+}
+.how-to{
+    text-align: center;
+}
+.right-part .how-to img{
+    width: 30px;
+    height: 40px;
+    border: 2px solid black;
+    margin-top: 10px;
+}
+@media screen and (max-width: 768px){
+    .contact-container1{
+        width: 80%;
+        display: block;
+        margin: auto;
+        padding-top: 50px;
+    }
+    .contacts-image{
+        float: none;
+        width: 100%;
+        display: block;
+        margin: auto;
+        padding-top: 3px;
+    } 
+    .right-part{
+        float: none;
+        width: 100%;
+    } 
+    .right-part img{
+      width: 100%;
+      height: auto;
+      display: block;
+      margin: auto;  
+    }
+}
+
+
+/********ARE YOU READY TO.......*********/
+
+.wrapper{
+    padding: 5px;
+    max-width: 960px;
+    width: 95%;
+    margin: 20px auto;
+}
+header{
+    padding: 0 15px;
+    text-align: center;
+    font-size: 21px;
+}
+.ALL-DOES{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 3px 0;
+}
+.instance{
+    flex: 1;
+    border: 1px solid black;
+    margin: 2px;
+    padding: 10px;
+    transition: 0.3s;
+}
+.ALL-DOES:first-child{
+    margin-left: 0;
+}
+.ALL-DOES:last-child{
+    margin-left: 0; 
+}
+@media screen and (max-width: 980px) {
+    .ALL-DOES .instance{
+        margin-bottom: 5px;
+        flex-basis: 40%;
+    }
+    .ALL-DOES .instance:last-child{
+        flex-basis: 100%;
+        margin: 0;
+    }
+    .ALL-DOES .instance:nth-last-child(2){
+        margin-right: 0;
+    }
+}
+@media screen and (max-width: 680px) {
+    .ALL-DOES .instance{
+        flex-basis: 100%;
+        margin: 0 0 spx 0;
+    }
+}
+
+/********** FILL THIS FORM*********************/
+
+
+
+.additional{
+    /* display: flex; */
+    max-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid black; */
+}
+.container{
+    width: 100%;
+    max-width: 650px;
+    background: rgba(0,0,0,0.5);
+    padding: 28px;
+    /* height: 100vh; */
+    margin: 0 28px;
+    border-radius: 10px;
+    box-shadow: inset -2px 2px 2px white;
+}
+.title{
+    font-size: 26px;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 6px;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    border-bottom: solid 1px white;
+}
+
+
+.main-user-info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0;
+
+}
+.user-input-box:nth-child(3n){
+    justify-content: end;
+}
+.user-input-box{
+    /* display: flex; */
+    flex-wrap: wrap;
+    width: 50%;
+    padding-bottom: 15px;
+}

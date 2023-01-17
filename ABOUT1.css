@@ -1,0 +1,121 @@
+
+ /*                           know me*/
+.section{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #ddd;
+}
+.container-ing{
+    width: 80%;
+    display: block;
+    margin: auto;
+    padding-top: 100px;
+}
+.content-section{
+    float: left;
+    width: 55%;
+}
+.image-section{
+    float: right;
+    width: 40%;
+}
+.image-section img{
+    width: 100%;
+    height: auto;
+}
+.content-section .content h3{
+    margin-top: 20px;
+    color: #5d5d5d;
+    font-size: 21px;
+}
+.content-section .content p{
+    margin-top: 10px;
+    font-size: 18px;
+    line-height: 1.5;
+}
+@media screen and (max-width: 768px){
+    .container-ing{
+        width: 80%;
+        display: block;
+        margin: auto;
+        padding-top: 50px;
+    }
+    .content-section{
+        float: none;
+        width: 100%;
+        display: block;
+        margin: auto;
+    } 
+    .image-section{
+        float: none;
+        width: 100%;
+        /* display: block;
+        margin: auto; */
+    } 
+    .image-section img{
+      width: 100%;
+      height: auto;
+      display: block;
+      margin: auto;  
+    }
+    .content-section .title{
+        text-align: center;
+        font-size: 19px;
+    }
+}
+/*                          I do what i like....*/
+.about2{
+    padding: 3em;
+    display: grid;
+    gap: 2em;
+    grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+}
+.about2 img{
+    max-width: 900px;
+}
+.about2 .phot{
+    display: block;
+}
+.about2 .paint{
+    display: block;
+}
+.about2 .study{
+    display: block;
+}
+/*    now tell me             */
+.about3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+}
+.about3-wrapped{
+    margin: 30px auto;
+    width: 50%;
+}
+.about3-wrapped img{
+    max-width: "320px";
+    float: left;
+    border: 3px solid #fff;
+    border-radius: 10px;
+    margin-right: 15px;
+}
+.about3-text{
+  color: #000;
+  font-size: 18px; 
+  margin-top: 30px; 
+  justify-content:space-around;
+}
+.ending{
+    display: block;
+    
+}
+.ending h4{
+    align-self: center;
+}
+.ending a{
+    float: flex-right;
+}
+.ending a:hover{
+    background-color:darkolivegreen;
+}
